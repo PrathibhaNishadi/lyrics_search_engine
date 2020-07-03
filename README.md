@@ -37,6 +37,7 @@ Data is scraped from the site www.sinhalasongbook.com
 ##### Cleaning and processing
 
 The unnecessary characters in the scraped data were removed and translated into sinhala using the googletrans Python library
+Processed Data is in [processed_song_details.json](https://github.com/PrathibhaNishadi/lyrics_search_engine/tree/master/Songs/processed_song_details.json)
 
 ### Creating Index
 
