@@ -13,7 +13,21 @@ Data scraping and encoding is done by Python
 #### Data
 
 The song details are in processed_song_details.json file containing 1096 objects containing 12 metadata  
-(Title, artist, lyricist, composer, beat, genre, movie, lyrics, views, url, shares and key) 
+
+```title``` : Name of the song (string)  
+```artist``` : Singer of the song (string)  
+```genre``` : Category of the song (string)  
+```writer``` : Lyricist of the song (string)  
+```composer``` : Music composer of the song (string)  
+```views``` : Number of views for the song in original site (number)  
+```beat``` : Beat of the music (string)  
+```movie``` : Movie the song is in (string)  
+```shares``` : How many shares happened in original site(number)  
+```url``` : URL for the song in original site (number)  
+```lyrics``` : lyrics of the song (string)  
+```key``` : Key of the song and music  (string)  
+
+
 
 ##### Scraping
 
@@ -169,9 +183,27 @@ Run the command ```node data.js``` in the terminal to run the data.js file and a
 ## Start searching
 
 Enter the search query in the search bar in sinhala language  
-> Eg: එඩ්වඩ් ජයකොඩි, ඩබ්ලිව්.ඩී අමරදේව කොළොම් තොට නැත, එඩ්වඩ් ජයකොඩි ගැයූ  
 
 The frontend is built using Vue, HTML and CSS   
+
+#### Basic Search  
+> Search by a song title  
+> Eg:- කොළොම් තොට  
+Search by an artist name  
+> Eg:- එඩ්වඩ් ජයකොඩි, එඩ්වඩ් ජයකොඩි ගැයූ  
+Search by a song genre  
+> Eg:- පැරණි පොප්ස්  
+Search by the lyricist  
+> Eg:- අජන්තා රණසිංහ රචිත  
+Search by the composer
+> Eg:- ඩබ්ලිව්.ඩී අමරදේව සංගීතවත් කල  
+Search by a lyrics  
+> Eg:- කොළොම් තොට නැත මහලු වී අවන්හල නැත පැරණි වී  
+
+#### Advanced Search  
+> Complex queries
+> Eg:- එඩ්වඩ් ජයකොඩි ගැයූ  හොඳම 10  
+       ඩබ්ලිව්.ඩී අමරදේව කොළොම් තොට නැත මහලු වී  
 
 ## Filtering and Advanced Queries ( Boosting )
 
