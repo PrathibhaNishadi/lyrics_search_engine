@@ -1,4 +1,6 @@
-# lyrics_search_engine
+# Sinahala Song Lyrics Search Engine  
+CS4642 - Data Mining & Information Retrieval Project  
+
 ## Introduction
 This is a simple search engine for searching song lyrics created using Elasticsearch and Node js for sinhala songs  
 Data scraping and encoding is done by Python 
