@@ -6,9 +6,9 @@ Data scraping and encoding is done by Python
 ## Getting Started with Elasticsearch
 ### Setting up Elasticsearch
 
-1. Download Elasticsearch and run the batch file  
+1. Download [Elasticsearch](https://www.elastic.co/downloads/elasticsearch) and run the batch file  
    ( You can check if the server is up by browsing http://localhost:9200 )   
-2. Optionally, download and run Kibana for query operations  
+2. Optionally, download and run [Kibana](https://www.elastic.co/downloads/kibana) for query operations  
 
 #### Data
 
@@ -213,7 +213,7 @@ The frontend is built using Vue, HTML and CSS
 
 ## Filtering and Advanced Queries ( Boosting )
 
-Filters has been used for artist, composer, lyricist and genre 
+##### Filters has been used for artist, composer, lyricist and genre 
 > Eg: Search query  "සුනිල්"  
 > Results
 >  Song details which contain  
@@ -222,6 +222,12 @@ Filters has been used for artist, composer, lyricist and genre
 > - "සුනිල්" in the artist  
 > - "සුනිල්" in the composer  
 
-Boosting has been used.
+##### Boosting has been used.
 
 > Eg: If the phrase contains the word "රචිත" boost the lyricist field
+
+##### Fuzzy search  
+
+Fuzzy queries give results that are likely to be relevant for a particular search query  
+This gives correct results even when spelling is not exactly the same  
+> Eg: If we search "ක්ලැර" instead of "ක්ලැරන්ස්" this gives results same as when "ක්ලැරන්ස්" is given
