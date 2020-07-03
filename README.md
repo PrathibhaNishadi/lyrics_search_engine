@@ -166,7 +166,24 @@ Run the command ```node data.js``` in the terminal to run the data.js file and a
 1. Run the command ```node index.js``` in the terminal 
 2. Browse http://localhost:3001 in the browser
 
-## Start the searching
+## Start searching
 
 Enter the search query in the search bar in sinhala language  
-Eg: එඩ්වඩ් ජයකොඩි, ඩබ්ලිව්.ඩී අමරදේව කොළොම් තොට නැත, එඩ්වඩ් ජයකොඩි ගැයූ  
+> Eg: එඩ්වඩ් ජයකොඩි, ඩබ්ලිව්.ඩී අමරදේව කොළොම් තොට නැත, එඩ්වඩ් ජයකොඩි ගැයූ  
+
+The frontend is built using Vue, HTML and CSS   
+
+## Filtering and Advanced Queries ( Boosting )
+
+Filters has been used for artist, composer, lyricist and genre 
+> Eg: Search query  "සුනිල්"  
+> Results
+>  Song details which contain  
+> - "සුනිල්" in the lyrics  
+> - "සුනිල්" in the lyricist  
+> - "සුනිල්" in the artist  
+> - "සුනිල්" in the composer  
+
+Boosting has been used.
+
+> Eg: If the phrase contains the word "රචිත" boost the lyricist field
